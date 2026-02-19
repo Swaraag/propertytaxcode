@@ -13,7 +13,7 @@ A prototype tool that estimates Cook County property taxes from a PIN. Built as 
 
 ## Requirements
 
-- Python 3.8+ (built in Python 3.14.2)
+- Python 3.8+
 - The Cook County Clerk Tax Code Rate Summary PDF (see below)
 
 ## Setup
