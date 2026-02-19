@@ -6,14 +6,14 @@ A prototype tool that estimates Cook County property taxes from a PIN. Built as 
 
 - Accepts one or more Cook County 14-digit PINs (with or without dashes)
 - Pulls assessment data from the Cook County Assessor's public API
-- Selects the most recent assessment using the hierarchy: **Board of Review → Certified → Mailed**
+- Selects the most recent assessment using the hierarchy: **Board of Review -> Certified -> Mailed**
 - Looks up the most recent available tax rate from the Cook County Clerk's Tax Code Rate Summary PDF
-- Calculates estimated taxes as: `(tax rate / 100) × equalization factor × assessment`
+- Calculates estimated taxes as: `(tax rate / 100) x equalization factor x assessment`
 - Displays a formatted result card per PIN including the required narrative line
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.8+ (built in Python 3.14.2)
 - The Cook County Clerk Tax Code Rate Summary PDF (see below)
 
 ## Setup

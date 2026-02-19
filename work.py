@@ -4,7 +4,6 @@ import requests
 PDF_PATH = "taxcodeRatesYearly.pdf"
 EQUALIZATION_F = 3.0355 #https://tax.illinois.gov/research/news/2024-cook-county-final-multiplier.html
 ASSESSOR_API = "https://datacatalog.cookcountyil.gov/resource/uzyt-m557.json"
-SAMPLE_PIN = "17-10-205-001-0000"
 
 def get_assessment(pin):
     clean_pin = pin.replace("-", "")
