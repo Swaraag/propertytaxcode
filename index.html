@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Tax Estimator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Cook County Property Tax Estimator</h1>
+
+    <label for="pins"><strong>Enter PINs</strong> (one per line, with or without dashes):</label>
+    <textarea id="pins" placeholder="17-10-205-001-0000&#10;17094190090000"></textarea>
+
+    <div class="toggles">
+        <label><input type="checkbox" id="analyzeTaxes" checked> Analyze Current Taxes</label>
+        <label><input type="checkbox" id="incomeApproach"> Perform Income Approach Analysis</label>
+    </div>
+
+    <button onclick="analyze()">Generate Report</button>
+    <div id="loading">Fetching data...</div>
+    <div id="results"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
